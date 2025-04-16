@@ -1,0 +1,19 @@
+{
+  "name": "parcial-corte-2-electiva-libre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "kafkajs": "^2.2.4",
+    "mongoose": "^8.13.2",
+    "mysql2": "^3.14.0",
+    "uuid": "^11.1.0"
+  }
+}
