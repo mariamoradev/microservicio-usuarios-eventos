@@ -1,3 +1,5 @@
+
+
 const express = require("express");
 const router = express.Router();
 const userController = require("../controllers/userController");
@@ -15,6 +17,6 @@ router.get("/:id", userController.getUser);
 router.put("/:id", userController.update);
 
 // Eliminar usuario por ID
-router.delete("/:id", userController.remove);
+// router.delete("/:id", userController.remove);  // ← ruta de eliminación desactivada
 
 module.exports = router;

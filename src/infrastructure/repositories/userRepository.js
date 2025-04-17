@@ -47,15 +47,15 @@ async function updateUser(id, newData) {
 }
 
 // Elimina un usuario con el id especificado
-async function deleteUser(id) {
-  const sql = "DELETE FROM users WHERE id = ?";
-  await db.query(sql, [id]);
-}
+// async function deleteUser(id) {
+//   const sql = "DELETE FROM users WHERE id = ?";
+//   await db.query(sql, [id]);
+// }
 
 module.exports = {
   save,
   getUserByEmail,
   getUserById,
   updateUser,
-  deleteUser,
+  // deleteUser, //
 };
