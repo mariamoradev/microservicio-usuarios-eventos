@@ -16,11 +16,11 @@ async function initProducer(maxRetries = 10) {
     try {
       console.log(`🔌 Intentando conectar a Kafka (intento ${attempt})...`);
       await producer.connect();
-      console.log("✅ Conexión exitosa con Kafka");
+      console.log("Conexión exitosa con Kafka");
       return;
     } catch (err) {
       console.error(
-        `❌ Error conectando a Kafka (intento ${attempt}):`,
+        `Error conectando a Kafka (intento ${attempt}):`,
         err.message
       );
       if (attempt === maxRetries) throw err;
